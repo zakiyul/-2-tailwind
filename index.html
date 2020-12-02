@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="./public/css/styleku.css" />
   </head>
   <body>
-    <div class="grid grid-cols-2">
-      <div class="bg-gray-100 p-20 pt-14 pr-28 pb-0">
+    <div class="md:grid grid-cols-2 sm:flex-col">
+      <div class="bg-gray-100 md:p-20 p-10 pt-14 md:pr-28 pb-0">
         <img src="./logo.png" alt="logo" class="w-16 h-16 mb-14" />
         <h1 class="text-3xl font-serif">Log In and Learn The Report</h1>
         <p class="text-gray-400 text-lg mt-4">
           We provide variant data that you can use it in order <br />
           to get the better perfomance at sales
         </p>
-        <div class="bg-white p-12 mt-10 rounded-tr-3xl rounded-tl-3xl">
+        <div
+          class="bg-white md:p-12 md:-mx-0 -mx-10 p-10 mt-10 md:rounded-tr-3xl md:rounded-tl-3xl"
+        >
           <form action="." class="flex flex-col">
             <label class="text-gray-400 text-lg my-3" for="email"
               >Email Address</label
@@ -24,6 +26,7 @@
             <input
               type="email"
               class="rounded-xl text-lg p-4 border border-gray-300 h-14 focus:outline-none focus:ring-1 ring-blue-500"
+              placeholder="Email Address"
             />
             <label class="text-gray-400 text-lg my-3" for="password"
               >Password</label
@@ -31,6 +34,7 @@
             <input
               type="password"
               class="rounded-xl text-lg p-4 border border-gray-300 h-14 focus:outline-none focus:ring-1 ring-blue-500"
+              placeholder="Password"
             />
             <label class="text-gray-400 text-lg my-3" for="accountType"
               >Account Type</label
@@ -59,7 +63,9 @@
         </div>
       </div>
       <div class="bg-gambar">
-        <div class="flex p-44 flex-col h-full justify-center items-center">
+        <div
+          class="flex md:p-44 p-20 flex-col h-full justify-center items-center"
+        >
           <img src="./illustration.png" alt="illustration" class="w-72" />
           <h3 class="text-white font-semibold text-lg text-center">
             Simple is Key
@@ -68,6 +74,12 @@
             Generate business model with no hustle and headache Lorem ipsum
             dolor sit amet consectetur adipisicing elit.
           </p>
+          <div class="flex mt-7">
+            <button class="rounded-full bg-gray-400 p-1"></button>
+            <button class="rounded-full bg-white ml-2 p-1"></button>
+            <button class="rounded-full bg-gray-400 ml-2 p-1"></button>
+            <button class="rounded-full bg-gray-400 ml-2 p-1"></button>
+          </div>
         </div>
       </div>
     </div>
